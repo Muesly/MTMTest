@@ -60,8 +60,10 @@
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
+	
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"MTMTest" withExtension:@"momd"];
-    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+
+	_managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
 
@@ -75,7 +77,11 @@
     
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"MTMTest.sqlite"];
-    NSError *error = nil;
+
+	// Start from fresh database each time
+	[[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];
+
+	NSError *error = nil;
     NSString *failureReason = @"There was an error creating or loading the application's saved data.";
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
         // Report any error we got.

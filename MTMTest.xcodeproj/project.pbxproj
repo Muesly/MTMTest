@@ -14,6 +14,10 @@
 		EA7FD5351C16D9EB0025D2C2 /* MTMTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA7FD5331C16D9EB0025D2C2 /* MTMTest.xcdatamodeld */; };
 		EA7FD5371C16D9EB0025D2C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA7FD5361C16D9EB0025D2C2 /* Assets.xcassets */; };
 		EA7FD53A1C16D9EB0025D2C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7FD5381C16D9EB0025D2C2 /* LaunchScreen.storyboard */; };
+		EA7FD5551C16DAA90025D2C2 /* Track+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7FD54E1C16DAA90025D2C2 /* Track+CoreDataProperties.m */; };
+		EA7FD5561C16DAA90025D2C2 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7FD5501C16DAA90025D2C2 /* Track.m */; };
+		EA7FD5571C16DAA90025D2C2 /* Playlist+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7FD5521C16DAA90025D2C2 /* Playlist+CoreDataProperties.m */; };
+		EA7FD5581C16DAA90025D2C2 /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7FD5541C16DAA90025D2C2 /* Playlist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,14 @@
 		EA7FD5361C16D9EB0025D2C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA7FD5391C16D9EB0025D2C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA7FD53B1C16D9EB0025D2C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA7FD54D1C16DAA90025D2C2 /* Track+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Track+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EA7FD54E1C16DAA90025D2C2 /* Track+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Track+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EA7FD54F1C16DAA90025D2C2 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		EA7FD5501C16DAA90025D2C2 /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		EA7FD5511C16DAA90025D2C2 /* Playlist+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Playlist+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EA7FD5521C16DAA90025D2C2 /* Playlist+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Playlist+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EA7FD5531C16DAA90025D2C2 /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playlist.h; sourceTree = "<group>"; };
+		EA7FD5541C16DAA90025D2C2 /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playlist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +56,14 @@
 		EA7FD51B1C16D9EB0025D2C2 = {
 			isa = PBXGroup;
 			children = (
+				EA7FD54D1C16DAA90025D2C2 /* Track+CoreDataProperties.h */,
+				EA7FD54E1C16DAA90025D2C2 /* Track+CoreDataProperties.m */,
+				EA7FD54F1C16DAA90025D2C2 /* Track.h */,
+				EA7FD5501C16DAA90025D2C2 /* Track.m */,
+				EA7FD5511C16DAA90025D2C2 /* Playlist+CoreDataProperties.h */,
+				EA7FD5521C16DAA90025D2C2 /* Playlist+CoreDataProperties.m */,
+				EA7FD5531C16DAA90025D2C2 /* Playlist.h */,
+				EA7FD5541C16DAA90025D2C2 /* Playlist.m */,
 				EA7FD5261C16D9EB0025D2C2 /* MTMTest */,
 				EA7FD5251C16D9EB0025D2C2 /* Products */,
 			);
@@ -155,7 +175,11 @@
 				EA7FD52F1C16D9EB0025D2C2 /* ViewController.m in Sources */,
 				EA7FD52C1C16D9EB0025D2C2 /* AppDelegate.m in Sources */,
 				EA7FD5351C16D9EB0025D2C2 /* MTMTest.xcdatamodeld in Sources */,
+				EA7FD5571C16DAA90025D2C2 /* Playlist+CoreDataProperties.m in Sources */,
+				EA7FD5561C16DAA90025D2C2 /* Track.m in Sources */,
 				EA7FD5291C16D9EB0025D2C2 /* main.m in Sources */,
+				EA7FD5551C16DAA90025D2C2 /* Track+CoreDataProperties.m in Sources */,
+				EA7FD5581C16DAA90025D2C2 /* Playlist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
